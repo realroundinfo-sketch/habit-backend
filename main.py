@@ -1,11 +1,4 @@
-"""Entry point for deployment: platform runs main.py or app.py by default."""
-import os
-import uvicorn
+"""Entry point for deployment. Platform runs uvicorn main:app — expose app here."""
+from app.main import app
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(
-        "app.main:app",
-        host="0.0.0.0",
-        port=port,
-    )
+__all__ = ["app"]
