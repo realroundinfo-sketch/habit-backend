@@ -12,8 +12,8 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
 
-    # CORS
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:3001,http://localhost:3002,http://localhost:3003"
+    # CORS — set to * to allow any origin, or comma-separated URLs (e.g. https://yourapp.vercel.app)
+    CORS_ORIGINS: str = "*"
 
     # App
     APP_NAME: str = "PeakTrack"
