@@ -1,0 +1,28 @@
+# bytecode
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+
+# virtual env
+venv
+.venv
+env
+.env
+
+# env files with secrets
+.env
+.env.local
+*.env
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# misc
+.DS_Store
+*.db
+*.sqlite
+*.sqlite3
